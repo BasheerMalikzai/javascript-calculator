@@ -1,0 +1,42 @@
+
+body{
+    text-align: center;
+}
+
+#main{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-rows: repeat(3, auto);
+    height: 100vh;
+    width: 100vw;
+}
+
+h4{
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+}
+
+#input-text{
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+#buttons{
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+#buttons{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, auto);
+    height: 70%;
+    width: 100%;
+}
+
+.button{
+    height: 45px;
+    width: 45px;
+}

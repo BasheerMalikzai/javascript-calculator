@@ -10,7 +10,7 @@
 <body>
     <div id="main"> 
         <h4>Scientific Calculator</h4>
-        <input id="input-text" type="text">
+        <input id="input-text" type="text" onkeypress="return checkNumber(event)" value="0">
         <div id="buttons">
             <button class="button" id="log">log</button>
             <button class="button" id="ln">ln</button>
@@ -19,27 +19,27 @@
             <button class="button" id="sin">sin</button>
             <button class="button" id="cos">cos</button>
             <button class="button" id="tan">tan</button>
-            <button class="button" id="7">7</button>
-            <button class="button" id="8">8</button>
-            <button class="button" id="9">9</button>
-            <button class="button" id="plus">+</button>
-            <button class="button" id="correct"><</button>
-            <button class="button" id="4">4</button>
-            <button class="button" id="5">5</button>
-            <button class="button" id="6">6</button>
-            <button class="button" id="minus">-</button>
+            <button class="button" id="d7">7</button>
+            <button class="button" id="d8">8</button>
+            <button class="button" id="d9">9</button>
             <button class="button" id="clear">c</button>
-            <button class="button" id="1">1</button>
-            <button class="button" id="2">2</button>
-            <button class="button" id="3">3</button>
+            <button class="button" id="d4">4</button>
+            <button class="button" id="d5">5</button>
+            <button class="button" id="d6">6</button>
+            <button class="button" id="correct"><</button>
+            <button class="button" id="d1">1</button>
+            <button class="button" id="d2">2</button>
+            <button class="button" id="d3">3</button>
+            <button class="button" id="plus">+</button>
+            <button class="button" id="d0">0</button>
+            <button class="button" id="minus">-</button>
             <button class="button" id="multiply">x</button>
-            <button class="button" id="equals">=</button>
-            <button class="button" id="0">0</button>
             <button class="button" id="point">.</button>
-            <button class="button" id="buttonide">/</button>
+            <button class="button" id="divide">/</button>
+            <button class="button" id="equals">=</button>
         </div>
     </div>
     
 </body>
-<script href="script.js"></script>
+<script src="script.js"></script>
 </html>

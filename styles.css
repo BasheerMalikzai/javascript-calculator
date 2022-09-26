@@ -21,13 +21,17 @@ h4{
 #input-text{
     grid-row-start: 2;
     grid-row-end: 2;
+    position: relative;
+    margin-bottom: 30%;
+    height: 40px;
+    font-size: 14px;
 }
+
+
+
 #buttons{
     grid-row-start: 3;
     grid-row-end: 3;
-}
-
-#buttons{
     display: grid;
     justify-content: center;
     align-content: center;
@@ -39,4 +43,14 @@ h4{
 .button{
     height: 45px;
     width: 45px;
+}
+
+#tan{
+    grid-column: 3/5;
+    width: 90px;
+}
+
+#equals{
+    grid-column: 2/5;
+    width:auto;
 }

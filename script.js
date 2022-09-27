@@ -27,8 +27,10 @@ const ln =  document.getElementById("ln");
 const sin = document.getElementById("sin");
 const cos = document.getElementById("cos");
 const tan = document.getElementById("tan");
+const factorial = document.getElementById("factorial");
 const equals = document.getElementById("equals");
 const clear = document.getElementById("clear");
+const correct = document.getElementById("correct");
 
 //Variable that stores calculation results
 let result = 0
@@ -165,6 +167,18 @@ tan.addEventListener('click', ()=>{
     result = Math.tan(Number(inputField.value));
     operatorClicked=true;
     inputField.value=result;
+})
+
+const factorialFunction = n => n ?  (n * factorialFunction(n-1)) : 1;
+
+factorial.addEventListener('click', ()=>{
+    result = factorialFunction(Number(inputField.value));
+    operatorClicked=true;
+    inputField.value=result;
+})
+
+correct.addEventListener('click', ()=>{
+    inputField.value = inputField.value.slice(0,-1)
 })
 
 

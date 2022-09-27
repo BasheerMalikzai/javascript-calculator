@@ -45,10 +45,6 @@ h4{
     width: 45px;
 }
 
-#tan{
-    grid-column: 3/5;
-    width: 90px;
-}
 
 #equals{
     grid-column: 2/5;
